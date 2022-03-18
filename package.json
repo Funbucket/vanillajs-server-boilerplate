@@ -25,10 +25,10 @@
     "webpack-merge": "^5.8.0"
   },
   "scripts": {
-    "dev": "concurrently \"yarn build:dev\" \"nodemon server/app.js\"",
+    "dev": "concurrently \"yarn build:dev\" \"nodemon server/server.js\"",
     "build:dev": "webpack --config webpack.dev.js",
     "build:prod": "webpack --config webpack.prod.js",
-    "serve": "node server/app.js",
+    "serve": "node server/server.js",
     "start": "yarn build:prod && yarn serve"
     
   }
